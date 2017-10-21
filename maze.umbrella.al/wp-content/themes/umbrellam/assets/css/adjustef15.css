@@ -1,0 +1,222 @@
+.inner_content.smoothscroll{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: visible;
+    z-index: 2;
+    width: 100%;
+}
+
+.logged-in .inner_content.smoothscroll{
+    top:32px;
+}
+
+.page_scroll{
+    position: relative;
+}
+
+.hidden_audio{
+    display: none;
+}
+
+.inner_content > canvas{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.page-template-template-home .page_scroll ,.page-template-template-home  .inner_content , .page-template-template-home  .inner_content > section{
+    pointer-events: none;
+}
+
+.inner_content > section *{
+    pointer-events: all;
+}
+
+.inner_content .blog-con *{
+    pointer-events: all;
+}
+/*Typography Slider*/
+.typo-slides .page-intro-con{
+    display: none;
+}
+
+.typo-slides .page-intro-con:first-child{
+    display: block;
+}
+
+.typo-slides .page-intro-con p{
+    opacity: 0;
+
+    transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+
+    transition-delay: .6s;
+    -webkit-transition-delay: .6s;
+}
+
+span.single_char{
+    display: inline-block;
+
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+
+    transition: all 1.6s cubic-bezier(0.19,1,.22,1);
+    -webkit-transition: all 1.6s cubic-bezier(0.19,1,.22,1);
+
+    /*Initial State*/
+    opacity: 0;
+    transform: translate3d(0px,123px,0px) rotate3d(1,0,2,35deg) scale3d(0.2,0.2,0.2);
+    -webkit-transform: translate3d(0px,123px,0px) rotate3d(1,0,2,35deg) scale3d(0.2,0.2,0.2);
+}
+
+span.single_char:nth-child(odd){
+    /*Initial State*/
+    transform: translate3d(0px,-123px,0px) rotate3d(1,0,-2,35deg) scale3d(0.2,0.2,0.2);
+    -webkit-transform: translate3d(0px,-123px,0px) rotate3d(1,0,-2,35deg) scale3d(0.2,0.2,0.2);
+}
+
+.page-intro-con.typo-animated span.single_char{
+    transform: translate3d(0px,0px,0px) rotate3d(0,0,0,0deg) scale3d(1,1,1);
+    -webkit-transform: translate3d(0px,0px,0px) rotate3d(0,0,0,0deg) scale3d(1,1,1);
+    opacity: 1;
+}
+
+.page-intro-con.typo-animated p{
+    opacity: 1;
+}
+
+.page-intro-con.typo-anim-out{
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+
+    opacity: 0 !important;
+}
+/*Typography Slider*/
+
+.um-iconholder img{
+    width: 100%;
+    height: auto;
+}
+
+.avatar-container img{
+    width:100%;
+}
+
+.error{
+    border: 1px solid #ff3a24 !important;
+}
+
+.mail_sent_message{
+    display: none;
+}
+
+.bwp-single-slide .single_slide{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bwp-single-slide .single_slide:first-child{
+    display: block;
+}
+
+
+.team .dialog_content{
+    display: none;
+}
+/*SVG Map*/
+.svg_map{
+    position: relative;
+    text-align: none;
+}
+.svg_map img {
+    width: 100%;
+    height: 461px;
+}
+
+.disabled {
+    opacity: 0.4 !important;
+
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+
+    pointer-events: none;
+
+    -webkit-animation-name: none !important;
+    -moz-animation-name: none !important;
+    -ms-animation-name: none !important;
+    -o-animation-name: none !important;
+    animation-name: none !important;
+}
+
+.portfolio_masonry .portfolio-item , .portfolio_masonry .portfolio-thumb , .portfolio_masonry .portfolio-thumb img{
+    height: auto;
+}
+
+.single-featured-image img {
+    width: 100%;
+    height: auto;
+}
+
+.google_map{
+    height: 600px;
+}
+
+.custom-map-image{
+    height: 600px;
+}
+
+.no_custom_cursor{
+    cursor: initial;
+}
+.wp-caption{
+    max-width: 100%;
+}
+
+.u-slides-control li{
+    width: 100%;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+
+.u-slides-control li:first-child{
+    display: block;
+}
+.slide-image{
+    width:100%;
+    height: 100%;
+}
+
+.u-captions h2{
+    display: none;
+}
+
+.u-captions h2.animated{
+    display: block;
+}
+
+.mobile-filters ul{
+	display:none;
+}
+/*Debug*/
+/*
+.page-template-template-home-php .services{
+    border: 3px dotted red;
+}
+
+.services .subject{
+    width:160px;
+    height:160px;
+    background: red;
+    position: absolute;
+    left:20px;
+}*/
